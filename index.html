@@ -109,7 +109,14 @@
     <header>
       <nav>
         <div class="menu">
-          <button  class="menu-btn"><img  onclick="myFunction()" src="./img/logo/air-travel.svg" alt="Travel" width="70"></button>
+          <button class="menu-btn">
+            <img
+              onclick="myFunction()"
+              src="./img/logo/air-travel.svg"
+              alt="Travel"
+              width="70"
+            />
+          </button>
           <div id="myMenu" class="menu-content">
             <a href="./index.html">Home</a>
             <a href="#about">About Us</a>
@@ -118,6 +125,34 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="main">
+        <div class="main-item1"><span>Welcome to our website</span></div>
+        <div class="main-item2">
+          <form
+            action=""
+            method="get"
+            onsubmit="return doSearch('search-form','text_search');"
+            id="search-form"
+          >
+            <input
+              type="text"
+              name="s"
+              class="search-field"
+              id="text_search"
+              value=""
+              maxlength="100"
+            />
+            <input
+              type="button"
+              value="Search"
+              onclick="return doSearch('search-form','text_search');"
+              class="search-button"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
 
     <script src="./js/index.js"></script>
   </body>
