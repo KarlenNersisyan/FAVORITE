@@ -107,19 +107,16 @@
   </head>
   <body>
     <header>
-      <div class="menu" id="myMenu">
-        <a href="#Home" class="active" id="myBtn" onclick="clickMenu()"
-          ><img src="./img/logo/air-travel.svg" alt="Travel" width="70"
-        /></a>
-        <div id="myMenuItem" class="menu-item">
-          <a href="./index.html">Home</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+      <nav>
+        <div class="menu">
+          <button  class="menu-btn"><img  onclick="myFunction()" src="./img/logo/air-travel.svg" alt="Travel" width="70"></button>
+          <div id="myMenu" class="menu-content">
+            <a href="./index.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
-        <div class="icon" onclick="clickMenuMobile()">
-          <i class="fa fa-bars"></i>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <script src="./js/index.js"></script>
