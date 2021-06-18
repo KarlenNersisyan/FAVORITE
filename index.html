@@ -114,18 +114,31 @@
   </head>
   <body>
     <header>
-      <ul class="menu">
-        <li class="logo">
+      <nav class="menu">
+        <!-- Menu Mobile Start -->
+        <nav class="menu-mobile">
+          <div class="menu-mobile-item"><a href="./index.html">Home</a></div>
+          <div class="menu-mobile-item"><a href="./about.html">About</a></div>
+          <div class="menu-mobile-item">
+            <a href="./contact.html">Contact</a>
+          </div>
+          <div class="menu-mobile-sign-in">
+            <i class="far fa-sign-in-alt"></i>
+          </div>
+        </nav>
+        <!-- Menu Mobile End -->
+
+        <div class="logo">
           <a href="./index.html"
             ><img src="./img/logo/air-travel.svg" alt="travel" width="50"
           /></a>
-        </li>
-        <div class="menu-item">
+        </div>
+        <ul class="menu-item">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
-        </div>
-        <li class="search">
+        </ul>
+        <div class="search">
           <label for="site-search">
             <input
               type="search"
@@ -134,12 +147,15 @@
               aria-label="Search through site content"
             />
           </label>
-          <button id="btn-search"><span>Search</span></button>
-        </li>
-        <li class="icon">
-          <a href="#menu" id="burgerMenu">&#9776;</a>
-        </li>
-      </ul>
+          <button id="btn-search"><p>Search</p></button>
+        </div>
+        <div class="icon">
+          <a href="#menu" id="burgerMenu"><i class="far fa-bars"></i></a>
+        </div>
+        <div class="sign-in">
+          <i class="far fa-sign-in-alt"></i>
+        </div>
+      </nav>
     </header>
   </body>
 </html>

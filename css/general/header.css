@@ -2,15 +2,14 @@
   box-sizing: border-box;
 }
 
-ul.menu {
+.menu {
   width: 100%;
   height: 70px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
   overflow: hidden;
-  text-align: center;
-  background-color: #333;
+  background-color: var(--menu-bg-color);
 }
 .logo {
   width: 10%;
@@ -24,24 +23,29 @@ ul.menu {
   justify-content: space-between;
 }
 
-ul.menu li a {
+.menu li a {
   display: inline;
-  color: #f2f2f2;
-  text-align: center;
+  color: var(--menu-item-color);
   text-decoration: none;
   transition: 0.3s;
   font-size: 1.1rem;
 }
 
-ul.menu li a:hover {
-  background-color: #111;
+.menu li a:hover {
+  color: var(--menu-item-hover-color);
 }
-
-ul.menu li.icon {
+.icon {
+  position: relative;
   display: none;
 }
+/* -----------------------Start----------- */
+.menu-mobile {
+  display: none;
+}
+
+/* -----------------------End----------- */
 .search {
-  width: 30%;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -51,12 +55,37 @@ ul.menu li.icon {
 }
 #btn-search {
   width: 110px;
-  background-color: white;
-  color: black;
+  background-color: var(--menu-item-color);
+  color: var(--menu-item-hover-color);
   border: none;
   border-radius: 20px;
 }
-#btn-search > span {
+#btn-search > p {
   display: flex;
   justify-content: center;
+}
+#burgerMenu > i {
+  color: var(--menu-item-color);
+}
+.sign-in {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sign-in > i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: var(--menu-item-color);
+  color: var(--menu-item-hover-color);
+  transition: 0.3s;
+}
+.sign-in:hover > i {
+  background-color: var(--menu-item-hover-color);
+  color: var(--menu-item-color);
 }

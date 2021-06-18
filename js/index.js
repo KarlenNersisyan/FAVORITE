@@ -1,5 +1,6 @@
-const burgerMenu = document.getElementById("burgerMenu");
+const burgerMenu = document.querySelector(".menu-mobile");
+const iconItem = document.querySelector("#burgerMenu");
 
-burgerMenu.addEventListener("click", () => {
-  document.getElementsByClassName("menu")[0].classList.toggle("responsive");
+iconItem.addEventListener("click", () => {
+  burgerMenu.classList.toggle("hide");
 });
