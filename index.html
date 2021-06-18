@@ -46,6 +46,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <!-- Normalize - End -->
+    <!-- Tailwind Start  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwind End  -->
     <!-- Favicon - Start -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -103,57 +109,37 @@
       rel="stylesheet"
     />
     <!-- Google Fonts End -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./style.css	" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="menu">
-          <button class="menu-btn">
-            <img
-              onclick="myFunction()"
-              src="./img/logo/air-travel.svg"
-              alt="Travel"
-              width="70"
-            />
-          </button>
-          <div id="myMenu" class="menu-content">
-            <a href="./index.html">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
-          </div>
+      <ul class="menu">
+        <li class="logo">
+          <a href="./index.html"
+            ><img src="./img/logo/air-travel.svg" alt="travel" width="50"
+          /></a>
+        </li>
+        <div class="menu-item">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </div>
-      </nav>
+        <li class="search">
+          <label for="site-search">
+            <input
+              type="search"
+              id="site-search"
+              name="search"
+              aria-label="Search through site content"
+            />
+          </label>
+          <button id="btn-search"><span>Search</span></button>
+        </li>
+        <li class="icon">
+          <a href="#menu" id="burgerMenu">&#9776;</a>
+        </li>
+      </ul>
     </header>
-    <main>
-      <section class="main">
-        <div class="main-item1"><span>Welcome to our website</span></div>
-        <div class="main-item2">
-          <form
-            action=""
-            method="get"
-            onsubmit="return doSearch('search-form','text_search');"
-            id="search-form"
-          >
-            <input
-              type="text"
-              name="s"
-              class="search-field"
-              id="text_search"
-              value=""
-              maxlength="100"
-            />
-            <input
-              type="button"
-              value="Search"
-              onclick="return doSearch('search-form','text_search');"
-              class="search-button"
-            />
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <script src="./js/index.js"></script>
   </body>
 </html>
