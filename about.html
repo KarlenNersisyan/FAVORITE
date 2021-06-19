@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. ... The Document Object Model can be used with any programming language."
+    />
+    <meta
+      name="keywords"
+      content="DOM,Document Object Model,HTML,JavaScript,BOM,CSSOM,window,"
+    />
+    <meta name="author" content="@nersisyan_karl" />
+    <!-- Facebook Debugger Start-->
+    <meta property="og:url" content="karlennersisyan.github.io/dom_project/" />
+    <meta property="og:title" content="Travel" />
+    <meta
+      property="og:description"
+      content="The DOM is a W3C (World Wide Web Consortium) standard.The DOM defines a standard for accessing documents:The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+    />
+    <meta
+      property="og:image"
+      content="https://media.phillyvoice.com/media/images/062819__international_travel_d.2e16d0ba.fill-1200x630-c0.jpg"
+    />
+    <!-- Facebook Debugger End-->
+    <!-- Twitter Debugger Start-->
+    <meta
+      name="twitter:card"
+      content="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITERISEBMVEhISFRUQExUWFhcVGRUSGRgWFhYZFxUYHSggGBomGxUVIT0hJSkrLi4wFx8zODMsNyktLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYBAgQDBwj/xAA9EAACAgECAwUGAwYFBAMAAAABAgADBBEhBRIxBhNBUWEHFCIycYEjYpFCQ1KhsfAkM3KCwaKy0fFTY4P/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4xEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQETGswWHnA2iahweh1njZkpzivmHeMrWKuu5RSoZtPIF0Gv5hA99YBkcvEqtLWLhVqc1uTsA3Kraa+OzDf7eE34fxOq0uEbdNOYEFdiNQ2/7J339IHfEwGHnM6wEQTMcwgZiAYgIiICIiAiIgIiICIiAiIgIiICIiAmDAMwTA5cnNSsoHYDnbkUeZkJ2izqxdVRfYKaSrW2Enl7zQgLXzeXUkD08DODtPbqufadP8LSip6NqLGI/RRPSrj9ljlq8f3qhUrIKFOZbGQOfnIGnxDodoFnxmRkU1kFCvw8pBHL4aEekrL51defxHJyHCV4uNjUqSdNFbvbnIH5iUHr3fpJDs3QcbFRckpUS9thBYBU7x3sFYYnflU6fbylb7cZWBZRcyct2TcgxK2rV7NTYSg0ZQVJUWWEb7atpAdmbUQKc50Tu6EzuVyADbkNbbY+/zFdlHlv6T1rFuTefmrXM0Y7EMMGnYA+TWM36GS9vEsRinPj2nl2RmxrDy+g+HUdB+k1ycnAvsUte1VgXu+Us+MXQkHlYOF5hqIHtWzX5XKhK42IQDof8y/TZf9KDqPM+ksS7dZCcA7PrjbLY7JqxRSVCrztq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"
+    />
+    <meta
+      name="twitter:site"
+      content="https://karlennersisyan.github.io/DOM_Project/"
+    />
+    <meta name="twitter:creator" content="https://twitter.com/nersisyan_karl" />
+    <!-- Twitter Debugger End-->
+    <title>TraVel</title>
+    <!-- Icon Start -->
+    <link rel="icon" href="./img/logo/air-travel.jpg" />
+    <!-- Icon End -->
+    <!-- Normalize - Start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- Normalize - End -->
+    <!-- Tailwind Start  -->
+    <!-- <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- Tailwind End  -->
+    <!-- Favicon - Start -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon - End -->
+    <!-- Fontawesome Start -->
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome End -->
+    <!-- Google Fonts Start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts End -->
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/about.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <!-- Menu Mobile Start -->
+        <nav class="menu-mobile">
+          <div class="menu-mobile-item"><a href="./index.html">Home</a></div>
+          <div class="menu-mobile-item"><a href="./about.html">About</a></div>
+          <div class="menu-mobile-item">
+            <a href="./contact.html">Contact</a>
+          </div>
+          <div class="menu-mobile-sign-in">
+            <i class="far fa-sign-in-alt"></i>
+          </div>
+        </nav>
+        <!-- Menu Mobile End -->
+
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./img/logo/air-travel.svg" alt="travel" width="50"
+          /></a>
+        </div>
+        <ul class="menu-item">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="search">
+          <form action="" method="get" onsubmit="return doSearch('search-form','site-search');" id="search-form"></form>
+          <label for="site-search">
+            <input
+              type="search"
+              id="site-search"
+              name="search"
+              aria-label="Search through site content"
+              class="search-field"
+              maxlength="100" 
+              placeholder="Enter your search term"
+            />
+          </label>
+          <div id="btn-search" onclick="return doSearch('search-form','site-search');" ><i class="fas fa-search"></i></div>
+        </form>
+        </div>
+        <div class="icon">
+          <a href="#menu" id="burgerMenu"><i class="far fa-bars"></i></a>
+        </div>
+        <div class="sign-in">
+          <i class="far fa-sign-in-alt"></i>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

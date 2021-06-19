@@ -47,10 +47,10 @@
     />
     <!-- Normalize - End -->
     <!-- Tailwind Start  -->
-    <link
+    <!-- <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <!-- Tailwind End  -->
     <!-- Favicon - Start -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
@@ -162,5 +162,66 @@
         </div>
       </nav>
     </header>
+    <main class="container">
+
+
+  <div class="mySlides">
+    
+      <img src="./img/1.jpg" width="100%">
+  </div>
+
+  <div class="mySlides">
+    
+      <img src="./img/2.jpg" width="100%">
+  </div>
+
+  <div class="mySlides">
+    
+      <img src="./img/3.jpg" width="100%">
+  </div>
+
+  <div class="mySlides">
+    
+      <img src="./img/4.jpg" width="100%">
+  </div>
+
+  <div class="mySlides">
+    
+      <img src="./img/5.jpg" width="100%">
+  </div>
+
+  <div class="mySlides">
+    
+      <img src="./img/6.jpg" width="100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-hand-point-left"></i></a>
+  <a class="next" onclick="plusSlides(1)"><i class="fas fa-hand-point-right"></i></a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./img/1.jpg" width="100%" onclick="currentSlide(1)" alt="Greece">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/2.jpg" width="100%" onclick="currentSlide(2)" alt="Australia">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/3.jpg" width="100%" onclick="currentSlide(3)" alt="France">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/4.jpg" width="100%" onclick="currentSlide(4)" alt="Ireland">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/5.jpg" width="100%" onclick="currentSlide(5)" alt="Singapore">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./img/6.jpg" width="100%" onclick="currentSlide(6)" alt="Japan">
+    </div>
+  </div>
+    </main>
   </body>
 </html>

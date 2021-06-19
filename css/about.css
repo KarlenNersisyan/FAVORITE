@@ -1,0 +1,7 @@
+@import url(../css/general/variables.css);
+@import url(../css/general/header.css);
+@import url(../css/general/footer.css);
+@import url(../css/media/index-media.css);
+* {
+  box-sizing: border-box;
+}
