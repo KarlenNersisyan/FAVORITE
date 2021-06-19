@@ -58,8 +58,14 @@
     background-color: var(--menu-item-color);
     color: var(--menu-item-hover-color);
   }
-  .hide {
+  .show {
     display: none;
+  }
+  #btn-search {
+    width: 30px;
+  }
+  #btn-search > i {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -79,6 +85,12 @@
     height: 27px;
     line-height: 27px;
   }
+  #btn-search {
+    width: 20px;
+  }
+  #btn-search > i {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 375px) {
   .menu-mobile {
@@ -96,6 +108,12 @@
     width: 26px;
     height: 26px;
     line-height: 26px;
+  }
+  #btn-search {
+    width: 20px;
+  }
+  #btn-search > i {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -133,5 +151,11 @@
     width: 25px;
     height: 25px;
     line-height: 25px;
+  }
+  #btn-search {
+    width: 20px;
+  }
+  #btn-search > i {
+    font-size: 15px;
   }
 }

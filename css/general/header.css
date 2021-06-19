@@ -48,21 +48,23 @@
   width: 25%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 #site-search {
   border-radius: 20px;
 }
 #btn-search {
-  width: 110px;
-  background-color: var(--menu-item-color);
-  color: var(--menu-item-hover-color);
-  border: none;
-  border-radius: 20px;
+  width: 50px;
+  color: var(--menu-item-color);
+  transition: 0.3s;
 }
-#btn-search > p {
+#btn-search > i {
   display: flex;
+  font-size: 30px;
   justify-content: center;
+}
+#btn-search:hover {
+  color: var(--menu-item-hover-color);
 }
 #burgerMenu > i {
   color: var(--menu-item-color);
