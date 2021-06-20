@@ -46,6 +46,9 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
+setInterval(() => {
+  plusSlides(1);
+}, 3500);
 
 function currentSlide(n) {
   showSlides((slideIndex = n));
