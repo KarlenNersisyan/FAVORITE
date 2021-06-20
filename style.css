@@ -263,8 +263,7 @@ img {
     font-size: 11px;
   }
   .covid-19 {
-    height: 60px;
-    line-height: 25px;
+    height: 70px;
   }
   .info-elem-1 {
     font-size: 22px;
@@ -285,7 +284,6 @@ img {
   }
 
   .covid-19 {
-    line-height: 20px;
-    height: 70px;
+    height: 80px;
   }
 }
