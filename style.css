@@ -246,7 +246,7 @@ img {
 }
 @media (max-width: 425px) {
   .information {
-    height: 700px;
+    height: 740px;
   }
   .home-page1 {
     width: 48%;
@@ -280,8 +280,8 @@ img {
     height: 270px;
   }
   .info-elem1 {
-    line-height: 28px;
-    height: 60px;
+    line-height: 30px;
+    height: 70px;
   }
 
   .covid-19 {
