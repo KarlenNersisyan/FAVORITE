@@ -224,23 +224,23 @@ img {
   .info-elem1 {
     width: 80%;
     margin-left: 10%;
-    font-size: 13px;
+    font-size: 12px;
   }
   .info-elem2 {
     width: 99%;
     margin-left: 0.5%;
-    font-size: 13px;
+    font-size: 12px;
   }
   .covid-19 {
-    height: 50px;
-    line-height: 25px;
+    height: 60px;
+    line-height: 28px;
   }
   .info-elem-1 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .info-elem-2 {
     width: 98%;
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 2%;
   }
 }
@@ -255,33 +255,33 @@ img {
   .info-elem1 {
     width: 90%;
     margin-left: 5%;
-    font-size: 13px;
+    font-size: 11px;
   }
   .info-elem2 {
     width: 99%;
     margin-left: 0.5%;
-    font-size: 13px;
+    font-size: 11px;
   }
   .covid-19 {
-    height: 58px;
+    height: 60px;
     line-height: 25px;
   }
   .info-elem-1 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .info-elem-2 {
     width: 98%;
-    font-size: 13px;
+    font-size: 11px;
     margin-left: 2%;
   }
 }
 @media (max-width: 375px) {
   .home-page1 {
-    height: 225px;
+    height: 270px;
   }
   .info-elem1 {
-    line-height: 25px;
-    height: 55px;
+    line-height: 28px;
+    height: 60px;
   }
 
   .covid-19 {
