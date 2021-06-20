@@ -209,12 +209,12 @@ img {
 }
 @media (max-width: 1024px) {
   .info-elem1 {
-    font-size: 1px;
+    font-size: 13px;
   }
   .info-elem2 {
     width: 98%;
     margin-left: 2%;
-    font-size: 1px;
+    font-size: 13px;
   }
   .covid-19 {
     font-size: 13px;
@@ -224,12 +224,12 @@ img {
   .info-elem1 {
     width: 80%;
     margin-left: 10%;
-    font-size: 1px;
+    font-size: 13px;
   }
   .info-elem2 {
     width: 99%;
     margin-left: 0.5%;
-    font-size: 1px;
+    font-size: 13px;
   }
   .covid-19 {
     height: 50px;
@@ -255,15 +255,15 @@ img {
   .info-elem1 {
     width: 90%;
     margin-left: 5%;
-    font-size: 1px;
+    font-size: 13px;
   }
   .info-elem2 {
     width: 99%;
     margin-left: 0.5%;
-    font-size: 1px;
+    font-size: 13px;
   }
   .covid-19 {
-    height: 50px;
+    height: 58px;
     line-height: 25px;
   }
   .info-elem-1 {
@@ -286,6 +286,6 @@ img {
 
   .covid-19 {
     line-height: 20px;
-    height: 60px;
+    height: 70px;
   }
 }
