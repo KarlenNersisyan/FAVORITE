@@ -109,3 +109,4 @@ minus.addEventListener("click", () => {
 plus.addEventListener("click", () => {
   plusSlides(1);
 });
+
