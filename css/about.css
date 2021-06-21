@@ -156,13 +156,13 @@ body {
     font-size: 25px;
   }
   .history {
-    height: 530px;
+    height: 660px;
   }
   .history-item1 {
     font-size: 40px;
   }
   .history-item2 {
-    height: 450px;
+    height: 560px;
     padding: 30px 20px;
   }
 }
@@ -171,25 +171,25 @@ body {
     width: 100%;
   }
   .history {
-    height: 600px;
+    height: 650px;
   }
   .history-item1 {
     font-size: 35px;
   }
   .history-item2 {
-    height: 500px;
+    height: 550px;
     padding: 25px 20px;
   }
 }
 @media screen and (max-width: 375px) {
   .history {
-    height: 620px;
+    height: 670px;
   }
   .history-item1 {
     font-size: 30px;
   }
   .history-item2 {
-    height: 530px;
+    height: 610px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -199,13 +199,13 @@ body {
     font-size: 20px;
   }
   .history {
-    height: 690px;
+    height: 700px;
   }
   .history-item1 {
     font-size: 27px;
   }
   .history-item2 {
-    height: 600px;
-    padding: 20px 20px;
+    height: 610px;
+    padding: 10px 20px;
   }
 }
