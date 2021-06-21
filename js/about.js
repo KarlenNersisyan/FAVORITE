@@ -1,16 +1,17 @@
 let modal = document.getElementById("myModal");
-let modalImg = document.querySelector("#img01");
-let img = document.getElementById("myImg");
-
+let modalImg = document.querySelector("#img");
+let images = document.querySelector(".background-image");
 let captionText = document.getElementById("caption");
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
+let span = document.querySelector(".close");
 
-let span = document.getElementsByClassName("close")[0];
+images.addEventListener("click", (evt) => {
+  if (evt.target.tagName === "IMG") {
+    modal.style.display = "block";
+    modalImg.src = evt.target.src;
+    captionText.innerHTML = evt.target.alt;
+  }
+});
 
-span.onclick = function () {
+span.addEventListener("click", (e) => {
   modal.style.display = "none";
-};
+});

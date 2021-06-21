@@ -6,38 +6,22 @@ iconItem.addEventListener("click", () => {
 });
 
 // search
-function doSearch(id_form, id_camp) {
-  let search_string = $(id_camp).value;
-  search_string = trim(search_string);
+let search = document.querySelector(".search");
 
-  let search_form = $(id_form);
-  if (search_string.length < 3) {
-    alert("Minimum 3 characters!");
-    return false;
-  } else {
-    search_string = search_string.replace(/-/g, "_");
-    search_string = search_string.replace(/[^A-Za-z0-9_.]/g, "-");
-    search_form.action =
-      "https://karlennersisyan.github.io/DOM_Project/" + search_string;
-    search_form.submit();
-    return true;
-  }
-}
-
-function trim(str, chars) {
-  return myTrim(myTrimFunc(str, chars), chars);
-}
-
-function myTrim(str, chars) {
-  chars = chars || "\\s";
-  return str.replace(new RegExp("^[" + chars + "]+", "g"), "");
-}
-
-function myTrimFunc(str, chars) {
-  chars = chars || "\\s";
-  return str.replace(new RegExp("[" + chars + "]+$", "g"), "");
-}
-
+search.addEventListener("input", (e) => {
+  console.log(e);
+  let newUrl =
+    window.location.protocol +
+    "//" +
+    window.location.host +
+    window.location.pathname +
+    `?key=${e.target.value}`;
+  window.history.pushState(
+    { path: newUrl },
+    "",
+    newUrl
+  );
+});
 //-----------Slider-----
 
 let slideIndex = 1;
@@ -109,4 +93,3 @@ minus.addEventListener("click", () => {
 plus.addEventListener("click", () => {
   plusSlides(1);
 });
-
