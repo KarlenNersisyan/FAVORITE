@@ -5,3 +5,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-image: url(../img/background-contact.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
