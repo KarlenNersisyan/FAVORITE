@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(../img/7.jpg);
+  background-image: url(../img/9.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -199,13 +199,13 @@ body {
     font-size: 20px;
   }
   .history {
-    height: 700px;
+    height: 750px;
   }
   .history-item1 {
     font-size: 27px;
   }
   .history-item2 {
-    height: 610px;
-    padding: 10px 20px;
+    height: 700px;
+    padding: 5px 15px;
   }
 }
