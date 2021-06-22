@@ -16,11 +16,7 @@ search.addEventListener("input", (e) => {
     window.location.host +
     window.location.pathname +
     `?key=${e.target.value}`;
-  window.history.pushState(
-    { path: newUrl },
-    "",
-    newUrl
-  );
+  window.history.pushState({ path: newUrl }, "", newUrl);
 });
 //-----------Slider-----
 
