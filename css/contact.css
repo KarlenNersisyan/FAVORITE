@@ -188,11 +188,8 @@ body {
 #login-background {
   display: none;
   width: 70%;
-  display: flex;
-  flex-direction: column;
   height: 500px;
   padding: 110px 0;
-  justify-content: space-around;
   text-align: center;
   font-size: 15px;
   top: 80px;
@@ -213,6 +210,16 @@ body {
 
 .closeLogin:hover {
   color: green;
+}
+.passwordLogin {
+  margin-top: 15px;
+}
+.general {
+  width: 100%;
+  display: flex;
+  padding: 35px 0;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #inp7 {
   border-radius: 50px;
