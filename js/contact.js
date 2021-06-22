@@ -19,32 +19,118 @@ search.addEventListener("input", (e) => {
   window.history.pushState({ path: newUrl }, "", newUrl);
 });
 
+// Message
+let xError = document.querySelector(".closeError");
+let messageError = document.querySelector("#messageError");
+let xOk = document.querySelector(".closeOk");
+let messageOk = document.querySelector("#messageOk");
+let loginButton = document.querySelector(".closeLogin");
+let loginBackground = document.querySelector("#login-background");
+
+xError.addEventListener("click", (e) => {
+  messageError.style.display = "none";
+});
+xOk.addEventListener("click", (e) => {
+  messageOk.style.display = "none";
+});
+loginButton.addEventListener("click", (e) => {
+  loginBackground.style.display = "none";
+});
+
+// Validation Start
 let button = document.querySelector(".button");
-
 button.addEventListener("click", send);
+let nameError = document.querySelector("#name");
+let nameErrorInput = document.querySelector("#inp1");
+let surnameError = document.querySelector("#surname");
+let surnameErrorInput = document.querySelector("#inp2");
+let phoneError = document.querySelector("#phone");
+let phoneErrorInput = document.querySelector("#inp3");
+let emailError = document.querySelector("#email");
+let emailErrorInput = document.querySelector("#inp4");
+let passwordError = document.querySelector("#password");
+let passwordErrorInput = document.querySelector("#inp5");
 
-function send() {
+function send(e) {
+  e.preventDefault();
   let bool = true;
 
-  let x = inp1.value;
-  let y = inp2.value;
-  if (!validate(x)) {
+  let name = inp1.value;
+  let surName = inp2.value;
+  let phone = inp3.value;
+  let email = inp4.value;
+  let password = inp5.value;
+  if (!isNameSurname(name)) {
     bool = false;
+    nameErrorInput.style.backgroundColor = "red";
+    nameError.style.color = "red";
+  } else {
+    nameError.style.color = "green";
+    nameErrorInput.style.backgroundColor = "green";
   }
-  if (!validate(y)) {
+  if (!isNameSurname(surName)) {
     bool = false;
+    surnameErrorInput.style.backgroundColor = "red";
+    surnameError.style.color = "red";
+  } else {
+    surnameError.style.color = "green";
+    surnameErrorInput.style.backgroundColor = "green";
+  }
+  if (!isPhone(phone)) {
+    bool = false;
+    phoneErrorInput.style.backgroundColor = "red";
+    phoneError.style.color = "red";
+  } else {
+    phoneError.style.color = "green";
+    phoneErrorInput.style.backgroundColor = "green";
+  }
+  if (!isEmail(email)) {
+    bool = false;
+    emailErrorInput.style.backgroundColor = "red";
+    emailError.style.color = "red";
+  } else {
+    emailError.style.color = "green";
+    emailErrorInput.style.backgroundColor = "green";
+  }
+  if (!isPassword(password)) {
+    bool = false;
+    passwordErrorInput.style.backgroundColor = "red";
+    passwordError.style.color = "red";
+  } else {
+    passwordError.style.color = "green";
+    passwordErrorInput.style.backgroundColor = "green";
   }
   if (bool) {
-    localStorage.user = JSON.stringify({ name: x, surname: y });
+    localStorage.user = JSON.stringify({
+      name: name,
+      surname: surName,
+      phone: phone,
+      email: email,
+    });
+    messageOk.style.display = "block";
+  } else {
+    messageError.style.display = "block";
   }
 }
-
-function validate(word) {
+// Name-Surname
+function isNameSurname(nameSurname) {
   let regex = /^[a-zA-Z ]{2,30}$/;
-  return regex.test(word);
+  return regex.test(nameSurname);
 }
-//  function isEmail(email) {
-//   let regex =
-//   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-// return regex.test(String(email).toLowerCase());
-// }
+//Phone
+function isPhone(phone) {
+  let regex =
+    /\+(9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)\d{1,14}$/;
+  return regex.test(phone);
+}
+// Email
+function isEmail(email) {
+  let regex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  return regex.test(String(email).toLowerCase());
+}
+// Password
+function isPassword(password) {
+  let regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+  return regex.test(password);
+}

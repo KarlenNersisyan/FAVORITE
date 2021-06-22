@@ -93,14 +93,12 @@ body {
   right: 35px;
   color: #ffffff;
   font-size: 40px;
-  font-weight: bold;
   transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
   color: rgb(0, 0, 0);
-  text-decoration: none;
   cursor: pointer;
 }
 

@@ -171,36 +171,81 @@
         </div>
         <div class="item2">
           <label class="name">
-            <span>Name</span>
-          <input type="text" name="name" id="inp1" placeholder="Your Name" />
+            <span id="name">Name</span>
+          <input type="text" name="name" id="inp1" placeholder="Your Name" required />
           </label>
           <label class="surName">
-            <span>Surname</span>
-            <input type="text" name="surname" id="inp2" placeholder="Your Surname" />
+            <span id="surname">Surname</span>
+            <input type="text" name="surname" id="inp2" placeholder="Your Surname" required />
           </label>
         </div>
         <div class="item3">
           <label class="phone">
-            <span>Phone</span>
-            <input type="text" name="phone" id="inp3" placeholder="Your Phone" >
+            <span id="phone">Phone</span>
+            <input type="text" name="phone" id="inp3" placeholder="Your Phone" required >
           </label>
         </div>
         <div class="item4">
           <label class="email">
-            <span>Email</span>
-          <input type="email" name="email" id="inp4" placeholder="Your Email" />
+            <span id="email">Email</span>
+          <input type="email" name="email" id="inp4" placeholder="Your Email" required />
           </label>
           <label class="password">
-           <span>Password</span>
-          <input type="password" name="password" id="inp5" placeholder="Your Password" />
+           <span id="password">Password</span>
+          <input type="password" name="password" id="inp5" placeholder="Your Password" required />
           </label>
         </div>
         <div class="item5">
           <div class="button">
-            <button id="inp6">Registration</button>
+            <button type="submit" id="inp6">Registration</button>
           </div>
         </div>
       </form>
+      <div id="messageError">
+        <h2>To register, you must complete (required) the following entries:</h2>
+        <ol>
+          <li><h3>Name</h3> - at least 2 letters, no numbers or symbols.</li>
+          <li><h3>Surname</h3> - at least 2 letters, no numbers or symbols.</li>
+          <li><h3>Phone</h3> - sample` +37493017153</li>
+          <li><h3>Email</h3> - sample` karl1999@gmail.com</li>
+          <li><h3>Password</h3> - at least 8 characters:, sample` Ar77@0-7</li>
+        </ol>
+        <div class="closeError">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
+      <div id="messageOk">
+        <h2>Thank You Very Much</h2>
+        <p>You have successfully registered on our website ...</p>
+        <div class="check">
+          <i class="fas fa-user-check"></i>
+        </div>
+        <div class="closeOk">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+        <div class="login-item">
+         <h3> Login</h3>
+        </div>
+      </div>
+      <div id="login-background">
+        <div class="back-img">
+          <a href="./index.html"><img src="./img/logo/air-travel.svg" alt="Travel" title = "TraVel" width="70"></a>
+        </div>
+        <label class="username">
+        <input type="text" name="username" id="inp7" placeholder="Username" required />
+        </label>
+        <label class="passwordLogin">
+         <input type="password" name="passwordLogin" id="inp8" placeholder="Password" required />
+         </label>
+         <div class="item6">
+          <div class="buttonLogin">
+            <button type="submit" id="inp9">Login</button>
+          </div>
+        </div>
+        <div class="closeLogin">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
       </section>
     </main>
     <footer class="footer">
