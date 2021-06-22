@@ -186,7 +186,7 @@ body {
   font-size: 80px;
 }
 #login-background {
-  /* display: none; */
+  display: none;
   width: 70%;
   display: flex;
   flex-direction: column;
