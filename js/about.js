@@ -98,6 +98,7 @@ function sendLogin(event) {
       password: passwordLogin,
     });
     messageLoginOk.style.display = "block";
+    loginBackground.style.display = "none"
   } else {
     messageLoginError.style.display = "block";
   }
