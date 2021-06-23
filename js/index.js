@@ -207,7 +207,7 @@ notificationClose.addEventListener("click", () => {
 });
 let i = 0;
 notificationIcon.addEventListener("click", () => {
-  notificationBackground.classList.toggle("show");
+  notificationBackground.classList.toggle("hide");
   i++;
   if (i === 1) {
     notificationIcon.innerHTML = '<i class="fas fa-times"></i>';
