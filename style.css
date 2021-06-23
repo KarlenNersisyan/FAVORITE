@@ -366,6 +366,100 @@ img {
   font-size: 80px;
   color: orange;
 }
+/* notification */
+.notification-background {
+  width: 400px;
+  height: 120px;
+  border: none;
+  text-align: center;
+  background-color: #bca17ca3;
+  position: absolute;
+  right: 6%;
+  top: 580px;
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.background-item {
+  width: 20%;
+  display: none;
+  height: 80px;
+  background-color: #bca17ca3;
+  border: none;
+  position: absolute;
+  right: 3%;
+  top: 440px;
+  z-index: 99;
+}
+
+.notification-icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  right: 3%;
+  top: 530px;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 35px;
+  text-align: center;
+  background-color: #bca17ca3;
+}
+.notification-number {
+  font-size: 30px;
+  color: red;
+  right: 4%;
+  font-weight: 700;
+  top: 499px;
+  position: absolute;
+}
+.notification-delete {
+  width: 150px;
+  margin-left: 62%;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 50px;
+  background: white;
+  transition: 0.3s;
+}
+.notification-delete:hover {
+  background: rgba(255, 0, 0, 0.966);
+  color:white;
+}
+.notification-icon i {
+  color: #efff00;
+  cursor: pointer;
+}
+.notification-icon:hover {
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+}
+.notification-icon:hover > i {
+  color: white;
+}
+.notification-item {
+  left: 0;
+  top: 10px;
+  position: absolute;
+}
+.paragraph {
+  position: absolute;
+  left: 65px;
+  font-size: 20px;
+  top: 25px;
+}
+.notification-close {
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  color: #23241f;
+  font-size: 20px;
+  position: absolute;
+}
+.notification-close:hover > i {
+  color: rgb(122, 122, 7);
+}
+
 @media (max-width: 1440px) {
   .info-elem1 {
     font-size: 13px;
@@ -375,6 +469,11 @@ img {
   }
   .covid-19 {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .notification {
+    display: none;
   }
 }
 @media (max-width: 1024px) {
@@ -425,11 +524,11 @@ img {
   .login-item {
     margin: 50px 27%;
   }
-  #messageLoginError{
+  #messageLoginError {
     padding: 80px 0;
   }
-  .closeLoginError{
-    top:25px;
+  .closeLoginError {
+    top: 25px;
     right: 15px;
     font-size: 30px;
   }

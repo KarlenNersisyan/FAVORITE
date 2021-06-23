@@ -151,7 +151,7 @@ function sendLogin(event) {
       password: passwordLogin,
     });
     messageLoginOk.style.display = "block";
-    loginBackground.style.display = "none"
+    loginBackground.style.display = "none";
   } else {
     messageLoginError.style.display = "block";
   }
@@ -186,4 +186,39 @@ loginSignIn.addEventListener("click", () => {
 let loginSignInMobile = document.querySelector("#login-SignIn-Mobile");
 loginSignInMobile.addEventListener("click", () => {
   loginBackground.style.display = "block";
+});
+
+// notification
+
+let notificationClose = document.querySelector(".notification-close");
+let backgroundItem = document.querySelector(".background-item");
+let notificationIcon = document.querySelector(".notification-icon");
+let notificationBackground = document.querySelector(".notification-background");
+let notificationNumber = document.querySelector(".notification-number");
+let notificationDelete = document.querySelector(".notification-delete");
+let messageParagraph = document.querySelector("#message-paragraph");
+
+setTimeout(function () {
+  backgroundItem.style.display = "block";
+}, 3000);
+
+notificationClose.addEventListener("click", () => {
+  backgroundItem.style.display = "none";
+});
+let i = 0;
+notificationIcon.addEventListener("click", () => {
+  notificationBackground.classList.toggle("show");
+  i++;
+  if (i === 1) {
+    notificationIcon.innerHTML = '<i class="fas fa-times"></i>';
+    notificationNumber.style.display = "none";
+  }
+  if (i === 2) {
+    notificationIcon.innerHTML = '<i class="fas fa-comments"></i>';
+    i = 0;
+  }
+});
+notificationDelete.addEventListener("click", () => {
+  messageParagraph.style.display = "none";
+  notificationDelete.style.display = "none";
 });
