@@ -548,3 +548,27 @@ body {
     font-size: 30px;
   }
 }
+@media screen and (max-width: 270px) {
+  #login-background {
+    padding: 50px 0;
+    height: 360px;
+  }
+  .back-img img {
+    width: 32%;
+  }
+  #inp7 {
+    font-size: 9px;
+  }
+
+  #inp8 {
+    font-size: 9px;
+  }
+  #inp9 {
+    width: 70px;
+  }
+  .closeLogin {
+    top: 12px;
+    right: 14px;
+    font-size: 28px;
+  }
+}
