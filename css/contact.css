@@ -251,6 +251,62 @@ body {
   color: green;
   border: solid 3px green;
 }
+#messageLoginError {
+  display: none;
+  width: 70%;
+  height: 500px;
+  text-align: center;
+  font-size: 15px;
+  top: 80px;
+  left: 15%;
+  background: #ffffff;
+  color: rgb(250, 0, 0);
+  position: absolute;
+}
+.closeLoginError {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ff0000;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeLoginError:hover {
+  color: rgb(0, 0, 0);
+}
+#messageLoginOk {
+  display: none;
+  width: 70%;
+  height: 500px;
+  padding: 100px 0;
+  text-align: center;
+  font-size: 15px;
+  top: 80px;
+  left: 15%;
+  background: #ffffff;
+  color: rgb(75, 189, 0);
+  position: absolute;
+}
+
+.closeLoginOk {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: rgb(75, 189, 0);
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeLoginOk:hover {
+  color: rgb(0, 0, 0);
+}
+.checkLogin {
+  font-size: 80px;
+  color: orange;
+}
 @media screen and (max-width: 1200px) {
   #messageError {
     font-size: 13px;
@@ -274,10 +330,28 @@ body {
     font-size: 13px;
     padding: 50px 0;
   }
+  .closeOk {
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+  }
   .login-item {
     margin: 50px 36%;
   }
-  .closeOk {
+  #messageLoginError {
+    font-size: 13px;
+    padding: 50px 0;
+  }
+  .closeLoginError {
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+  }
+  #messageLoginOk {
+    font-size: 13px;
+    padding: 50px 0;
+  }
+  .closeLoginOk {
     top: 10px;
     right: 25px;
     font-size: 35px;
@@ -319,6 +393,14 @@ body {
   .login-item {
     width: 160px;
     margin: 50px 25%;
+  }
+}
+@media screen and (max-width: 510px) {
+  #inp7 {
+    font-size: 20px;
+  }
+  #inp8 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -378,6 +460,20 @@ body {
     width: 150px;
     height: 50px;
     margin: 50px 20%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .back-img img {
+    width: 20%;
+  }
+  #inp7 {
+    font-size: 15px;
+  }
+  #inp8 {
+    font-size: 15px;
+  }
+  #inp9 {
+    width: 150px;
   }
 }
 @media screen and (max-width: 325px) {

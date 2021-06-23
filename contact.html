@@ -120,7 +120,7 @@
             <a href="./contact.html">Contact</a>
           </div>
           <div class="menu-mobile-sign-in">
-            <i class="far fa-sign-in-alt"></i>
+            <i class="far fa-sign-in-alt" id="login-SignIn-Mobile"></i>
           </div>
         </nav>
         <!-- Menu Mobile End -->
@@ -157,7 +157,7 @@
           <a href="#menu" id="burgerMenu"><i class="far fa-bars"></i></a>
         </div>
         <div class="sign-in">
-          <i class="far fa-sign-in-alt"  title="Login"></i>
+          <i class="far fa-sign-in-alt"  title="Login" id="login-SignIn"></i>
         </div>
       </nav>
     </header>
@@ -223,10 +223,11 @@
         <div class="closeOk">
           <i class="fas fa-times-octagon"></i>
         </div>
-        <div class="login-item">
+        <button class="login-item">
          <h3> Login</h3>
-        </div>
+        </button>
       </div>
+      <!-- Login background -->
       <div id="login-background">
         <div class="back-img">
           <a href="./index.html"><img src="./img/logo/air-travel.svg" alt="Travel" title = "TraVel" width="80"></a>
@@ -245,6 +246,27 @@
           </div>
         </div>
         <div class="closeLogin">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
+      <!-- LoginErrorMessage -->
+      <div id="messageLoginError">
+        <h2>To Login, you must complete (required) the following entries:</h2>
+        <ul>
+          <li>Please enter your<h3>Username</h3> and <h3>Password</h3> </li>
+        </ul>
+        <div class="closeLoginError">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
+      <!-- LoginMessageOk -->
+      <div id="messageLoginOk">
+        <h2>Please wait ...</h2>
+        
+        <div class="checkLogin">
+          <i class="fas fa-smile-wink"></i>
+        </div>
+        <div class="closeLoginOk">
           <i class="fas fa-times-octagon"></i>
         </div>
       </div>

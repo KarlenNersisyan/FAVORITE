@@ -172,29 +172,199 @@ img {
   background-color: red;
   color: white;
 }
-@media (max-width: 768px) {
-  .prev,
-  .next {
-    top: 19%;
-  }
+#messageError {
+  display: none;
+  width: 70%;
+  height: 500px;
+  text-align: center;
+  font-size: 15px;
+  top: 80px;
+  left: 15%;
+  background: #ffffff;
+  color: rgb(250, 0, 0);
+  position: absolute;
 }
-@media (max-width: 425px) {
-  .prev,
-  .next {
-    padding: 20px;
-    top: 10%;
-    margin-top: 10px;
-    font-size: 25px;
-  }
+.closeError {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ff0000;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-@media (max-width: 320px) {
-  .prev,
-  .next {
-    padding: 15px;
-    top: 10%;
-    margin-top: 15px;
-    font-size: 15px;
-  }
+
+.closeError:hover {
+  color: rgb(0, 0, 0);
+}
+#messageOk {
+  display: none;
+  width: 70%;
+  height: 500px;
+  padding: 100px 0;
+  text-align: center;
+  font-size: 15px;
+  top: 80px;
+  left: 15%;
+  background: #ffffff;
+  color: rgb(75, 189, 0);
+  position: absolute;
+}
+.login-item {
+  width: 200px;
+  height: 50px;
+  margin: 50px 38%;
+  display: flex;
+  justify-content: center;
+  border: 1px green solid;
+  align-items: center;
+  cursor: pointer;
+  background-color: honeydew;
+  color: green;
+  transition: 0.3s;
+  box-shadow: 0 0 50px green;
+}
+.login-item:hover {
+  background-color: green;
+  color: honeydew;
+}
+.closeOk {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: rgb(75, 189, 0);
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeOk:hover {
+  color: rgb(0, 0, 0);
+}
+.check {
+  font-size: 80px;
+}
+#login-background {
+  display: none;
+  width: 70%;
+  height: 500px;
+  padding: 110px 0;
+  text-align: center;
+  font-size: 15px;
+  top: 80px;
+  left: 15%;
+  background: #5a5353f0;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.closeLogin {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeLogin:hover {
+  color: green;
+}
+.passwordLogin {
+  margin-top: 15px;
+}
+.general {
+  width: 100%;
+  display: flex;
+  padding: 35px 0;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#inp7 {
+  border-radius: 50px;
+  font-size: 27px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 50px #ffffff;
+}
+#inp8 {
+  border-radius: 50px;
+  font-size: 27px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 50px #ffffff;
+}
+#inp9 {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  box-shadow: 0 0 50px green;
+  transition: 0.3s;
+}
+#inp9:hover {
+  background-color: rgb(255, 255, 255);
+  color: green;
+  border: solid 3px green;
+}
+#messageLoginError {
+  display: none;
+  width: 70%;
+  height: 500px;
+  text-align: center;
+  font-size: 15px;
+  top: 80px;
+  left: 15%;
+  background: #ffffff;
+  color: rgb(250, 0, 0);
+  position: absolute;
+}
+.closeLoginError {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ff0000;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeLoginError:hover {
+  color: rgb(0, 0, 0);
+}
+#messageLoginOk {
+  display: none;
+  width: 70%;
+  height: 500px;
+  padding: 100px 0;
+  text-align: center;
+  font-size: 15px;
+  top: 80px;
+  left: 15%;
+  background: #ffffff;
+  color: rgb(75, 189, 0);
+  position: absolute;
+}
+
+.closeLoginOk {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: rgb(75, 189, 0);
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeLoginOk:hover {
+  color: rgb(0, 0, 0);
+}
+.checkLogin {
+  font-size: 80px;
+  color: orange;
 }
 @media (max-width: 1440px) {
   .info-elem1 {
@@ -219,6 +389,11 @@ img {
   .covid-19 {
     font-size: 13px;
   }
+  .login-item {
+    width: 200px;
+    height: 50px;
+    margin: 50px 34%;
+  }
 }
 @media (max-width: 768px) {
   .info-elem1 {
@@ -242,6 +417,33 @@ img {
     width: 98%;
     font-size: 12px;
     margin-left: 2%;
+  }
+  .prev,
+  .next {
+    top: 19%;
+  }
+  .login-item {
+    margin: 50px 27%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .login-item {
+    width: 160px;
+    margin: 50px 25%;
+  }
+}
+@media screen and (max-width: 510px) {
+  #inp7 {
+    font-size: 20px;
+  }
+  #inp8 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .login-item {
+    width: 140px;
+    margin: 50px 23%;
   }
 }
 @media (max-width: 425px) {
@@ -273,7 +475,20 @@ img {
     font-size: 11px;
     margin-left: 2%;
   }
+  .prev,
+  .next {
+    padding: 20px;
+    top: 10%;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .login-item {
+    width: 150px;
+    height: 50px;
+    margin: 50px 20%;
+  }
 }
+
 @media (max-width: 375px) {
   .home-page1 {
     height: 270px;
@@ -285,5 +500,32 @@ img {
 
   .covid-19 {
     height: 80px;
+  }
+  .back-img img {
+    width: 20%;
+  }
+  #inp7 {
+    font-size: 15px;
+  }
+  #inp8 {
+    font-size: 15px;
+  }
+  #inp9 {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .login-item {
+    width: 130px;
+    margin: 50px 17%;
+  }
+}
+@media (max-width: 320px) {
+  .prev,
+  .next {
+    padding: 15px;
+    top: 10%;
+    margin-top: 15px;
+    font-size: 15px;
   }
 }

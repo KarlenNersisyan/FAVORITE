@@ -123,7 +123,7 @@
             <a href="./contact.html">Contact</a>
           </div>
           <div class="menu-mobile-sign-in">
-            <i class="far fa-sign-in-alt"></i>
+            <i class="far fa-sign-in-alt" id="login-SignIn-Mobile"></i>
           </div>
         </nav>
         <!-- Menu Mobile End -->
@@ -160,7 +160,7 @@
           <a href="#menu" id="burgerMenu"><i class="far fa-bars"></i></a>
         </div>
         <div class="sign-in">
-          <i class="far fa-sign-in-alt"  title="Login"></i>
+          <i class="far fa-sign-in-alt"  title="Login" id="login-SignIn"></i>
         </div>
       </nav>
     </header>
@@ -185,6 +185,75 @@
           <div class="history-item1">History of Travel</div>
           <a href="https://en.wikipedia.org/wiki/Travel" class="history-item2" title="wikipedia">The journey dates back to antiquity, when wealthy Greeks and Romans traveled at their leisure to their summer homes and villas in cities such as Pompeii and Baia. Whereas early travel tended to be slower, more hazardous, and more driven by trade and migration, culture and technology. .Humanity has come a long way in transportation since Christopher Columbus sailed to the new world from Spain in 1492, the expedition arriving at the final destination took more than 10 weeks; into the 21st century, when planes make it possible to travel from Spain to the United States overnight.</a>
       </section>
+      <div id="messageError">
+        <h2>To register, you must complete (required) the following entries:</h2>
+        <ol>
+          <li><h3>Name</h3> - at least 2 letters, no numbers or symbols.</li>
+          <li><h3>Surname</h3> - at least 2 letters, no numbers or symbols.</li>
+          <li><h3>Phone</h3> - sample` +37493017153</li>
+          <li><h3>Email</h3> - sample` karl1999@gmail.com</li>
+          <li><h3>Password</h3> - at least 8 characters:, sample` Ar77@0-7</li>
+        </ol>
+        <div class="closeError">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
+      <div id="messageOk">
+        <h2>Thank You Very Much</h2>
+        <p>You have successfully registered on our website ...</p>
+        <div class="check">
+          <i class="fas fa-user-check"></i>
+        </div>
+        <div class="closeOk">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+        <button class="login-item">
+         <h3> Login</h3>
+        </button>
+      </div>
+      <!-- Login background -->
+      <div id="login-background">
+        <div class="back-img">
+          <a href="./index.html"><img src="./img/logo/air-travel.svg" alt="Travel" title = "TraVel" width="80"></a>
+        </div>
+        <div class="general">
+          <label class="username">
+            <input type="text" name="username" id="inp7" placeholder="Username" required />
+            </label>
+            <label class="passwordLogin">
+             <input type="password" name="passwordLogin" id="inp8" placeholder="Password" required />
+             </label>
+        </div>
+         <div class="item6">
+          <div class="buttonLogin">
+            <button type="submit" id="inp9">Login</button>
+          </div>
+        </div>
+        <div class="closeLogin">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
+      <!-- LoginErrorMessage -->
+      <div id="messageLoginError">
+        <h2>To Login, you must complete (required) the following entries:</h2>
+        <ul>
+          <li>Please enter your<h3>Username</h3> and <h3>Password</h3> </li>
+        </ul>
+        <div class="closeLoginError">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
+      <!-- LoginMessageOk -->
+      <div id="messageLoginOk">
+        <h2>Please wait ...</h2>
+        
+        <div class="checkLogin">
+          <i class="fas fa-smile-wink"></i>
+        </div>
+        <div class="closeLoginOk">
+          <i class="fas fa-times-octagon"></i>
+        </div>
+      </div>
     </main>
     <footer class="footer">
         <div class="footer-item1">
