@@ -473,7 +473,7 @@ body {
 @media screen and (max-width: 375px) {
   #login-background {
     padding: 62px 0;
-    height: 325px;
+    height: 360px;
   }
   .back-img img {
     width: 35%;
