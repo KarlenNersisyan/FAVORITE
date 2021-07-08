@@ -169,7 +169,7 @@ body {
   left: 15%;
   background: #ffffff;
   color: rgb(75, 189, 0);
-  position: absolute;
+  position: fixed;
 }
 .login-item {
   width: 200px;
@@ -216,7 +216,7 @@ body {
   left: 15%;
   background: #5a5353f0;
   color: rgb(255, 255, 255);
-  position: absolute;
+  position: fixed;
 }
 .closeLogin {
   position: absolute;
@@ -281,7 +281,7 @@ body {
   left: 15%;
   background: #ffffff;
   color: rgb(250, 0, 0);
-  position: absolute;
+  position: fixed;
 }
 .closeLoginError {
   position: absolute;
@@ -307,7 +307,7 @@ body {
   left: 15%;
   background: #ffffff;
   color: rgb(75, 189, 0);
-  position: absolute;
+  position: fixed;
 }
 
 .closeLoginOk {

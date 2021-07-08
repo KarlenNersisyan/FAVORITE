@@ -208,7 +208,7 @@ img {
   left: 15%;
   background: #ffffff;
   color: rgb(75, 189, 0);
-  position: absolute;
+  position: fixed;
 }
 .login-item {
   width: 200px;
@@ -255,7 +255,7 @@ img {
   left: 15%;
   background: #5a5353f0;
   color: rgb(255, 255, 255);
-  position: absolute;
+  position: fixed;
 }
 .closeLogin {
   position: absolute;
@@ -320,7 +320,7 @@ img {
   left: 15%;
   background: #ffffff;
   color: rgb(250, 0, 0);
-  position: absolute;
+  position: fixed;
 }
 .closeLoginError {
   position: absolute;
@@ -346,7 +346,7 @@ img {
   left: 15%;
   background: #ffffff;
   color: rgb(75, 189, 0);
-  position: absolute;
+  position: fixed;
 }
 
 .closeLoginOk {
@@ -368,18 +368,20 @@ img {
 }
 /* notification */
 .notification-background {
-  width: 400px;
+  width: 500px;
   height: 120px;
-  border: none;
+  border: white 5px solid;
   text-align: center;
   background-color: #bca17ca3;
-  position: absolute;
+  position: fixed;
   right: 6%;
-  top: 580px;
+  top: 425px;
+  border-radius: 20px 0;
   display: none;
 }
 .hide {
   display: block;
+  z-index: 123;
 }
 
 .background-item {
@@ -388,7 +390,8 @@ img {
   height: 80px;
   background-color: #bca17ca3;
   border: none;
-  position: absolute;
+  position: fixed;
+  border-radius: 35px 0;
   right: 3%;
   top: 440px;
   z-index: 99;
@@ -397,22 +400,23 @@ img {
 .notification-icon {
   width: 60px;
   height: 60px;
+  border: solid 5px white;
   line-height: 60px;
   right: 3%;
   top: 530px;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   font-size: 35px;
   text-align: center;
   background-color: #bca17ca3;
 }
 .notification-number {
-  font-size: 30px;
+  font-size: 25px;
   color: red;
-  right: 4%;
+  right: 3.8%;
   font-weight: 700;
-  top: 499px;
-  position: absolute;
+  top: 510px;
+  position: fixed;
 }
 .notification-delete {
   width: 150px;
@@ -425,7 +429,7 @@ img {
 }
 .notification-delete:hover {
   background: rgba(255, 0, 0, 0.966);
-  color:white;
+  color: white;
 }
 .notification-icon i {
   color: #efff00;
