@@ -30,8 +30,16 @@ _The Document Object Model (DOM) is a programming API for HTML and XML documents
 ### Creator
 _Karlen Nersisyan_
 
+## [Contact me](https://www.facebook.com/karlen.nersisyan.1999)
+
 * My
 
     * [Twitter](https://twitter.com/nersisyan_karl)
 
     * [Linkedin](https://www.linkedin.com/in/karlen-nersisyan/)
+
+    * [Codepen](https://codepen.io/karlennersisyan/)
+
+    * [Replit](https://replit.com/@KarlenNersisyan)
+
+    * [Telegram](https://t.me/NKarlen)
